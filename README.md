@@ -34,7 +34,8 @@ Get-GmapsQuery -Query [string] -QueryID [string]
 literally anything you would type into a search box in google maps. That simple.
 ### -QueryID
 I have no idea what this does yet. Didn't bother reading the docs for this one.
-It's probably implemented properly though ¯\\_(ツ)_/¯
+It's probably implemented properly though ¯\\_(ツ)_/¯  
+
 ## Get-GMap
 ### Usage:
 ```ps
@@ -73,5 +74,8 @@ This is the field of vision.
 To the uninitiated, this is how far left and right you're going to be able to see on screen at any given time. It's generally speaking referencing a cone going out from the eye/camera directly ahead, and the angle provided would be the angle that would be at the tip of the cone (inside the eye/camera)  
 Range is `10` to `100`
 
-## to do
- - Add documentation to the code of this and format it like a proper powershell module
+## To-Do
+ - Add documentation to the code of this and format it like a proper powershell module  
+
+## Final Notes
+I have no intentions of adding any of the google maps APIs to this module as they cost money to use. I may however create stuff for OpenStreetMaps.
