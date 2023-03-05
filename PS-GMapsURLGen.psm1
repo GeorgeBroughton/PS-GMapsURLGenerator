@@ -1,7 +1,7 @@
 function Get-GMapsDirections {
     <#
     .SYNOPSIS
-    Links you to directions on Google Maps
+    Links you to directions on Google Maps.
     .DESCRIPTION
     Generates a URL to Google Maps with directions between the places you specify.
     .PARAMETER Origin
@@ -14,10 +14,10 @@ function Get-GMapsDirections {
     A Google Maps Place ID for the end position.
     .PARAMETER TravelMode
     Can be one of these options:
-        walking      - Directions for Walking.
-        bicycling    - Directions for Cycling.
-        transit      - Directions for Public Transport.
-        driving      - Directions for Driving.
+        walking      - Directions for Walking
+        bicycling    - Directions for Cycling
+        transit      - Directions for Public Transport
+        driving      - Directions for Driving
     .PARAMETER Navigate
     This is a switch that should™ activate the Sat Nav mode on Google Maps. Might only work on mobile.
     .PARAMETER Waypoints
@@ -27,7 +27,7 @@ function Get-GMapsDirections {
     .OUTPUTS
     A URL to Google Maps.
     .EXAMPLE
-    Command: Get-GMapsDirections -Origin "Your Location" -Destination "London,UK" -TravelMode "transit" -Navigate
+    Command: Get-GMapsDirections -Origin "Your Location" -Destination "London,UK" -TravelMode transit -Navigate
     Result:  https://www.google.com/maps/dir/?api=1&origin=Your+Location&destination=London%2CUK&travelmode=transit&dir_action=navigate
     .LINK
     https://github.com/GeorgeBroughton/PS-GMapsURLGenerator
@@ -68,7 +68,7 @@ function Get-GMapsQuery {
     .PARAMETER QueryID
     A Google Maps Place ID for the position you wish to view.
     .OUTPUTS
-    A URL to Google Maps
+    A URL to Google Maps.
     .EXAMPLE
     Command: Get-GMapsQuery -Query "Reading"
     Result:  https://www.google.com/maps/search/?api=1&query=Reading
@@ -91,26 +91,26 @@ function Get-GMapsQuery {
 function Get-GMap {
     <#
     .SYNOPSIS
-    Links you to directions on Google Maps
+    Links you to directions on Google Maps.
     .DESCRIPTION
     Generates a URL to Google Maps with directions between the places you specify.
     .PARAMETER Center
     An array of floating point numbers representing Latitude,Longitude in decimal degrees.
     .PARAMETER Zoom
-    An integer from 0 - 21
-    0  zooms all the way out to the whole world
-    21 zooms into the area of an individual building
+    An integer from 0 - 21:
+        0  zooms all the way out to the whole world
+        21 zooms into the area of an individual building
     .PARAMETER BaseMap
     Can be one of these options:
-    roadmap      - Shows a vector map of all the roads. Looks like a classic atlas
-    satellite    - Shows a stitched satellite image of the map
-    terrain      - Shows a height map, visualising terrain incline
+        roadmap      - Shows a vector map of all the roads. Looks like a classic atlas
+        satellite    - Shows a stitched satellite image of the map
+        terrain      - Shows a height map, visualising terrain incline
     .PARAMETER Layer
     Can be one of these options:
-    none         - No map overlay
-    transit      - Shows bus routes and train routes
-    traffic      - Shows traffic warnings and roadworks
-    bicycling    - Highlights cycle routes
+        none         - No map overlay
+        transit      - Shows bus routes and train routes
+        traffic      - Shows traffic warnings and roadworks
+        bicycling    - Highlights cycle routes
     .OUTPUTS
     A URL to Google Maps.
     .EXAMPLE
@@ -139,7 +139,7 @@ function Get-GMap {
 function Get-GStreetView {
     <#
     .SYNOPSIS
-    Links you to directions on Google Maps
+    Links you to directions on Google Maps.
     .DESCRIPTION
     Generates a URL to Google Maps with directions between the places you specify.
     .PARAMETER Viewpoint
@@ -147,23 +147,22 @@ function Get-GStreetView {
     .PARAMETER PanoID
     This is the specific panoramic 360 degree image from Google Street View.
     .PARAMETER Heading
-    A floating point number from -180 to 360
-    0   is North
-    90  is East
-    180 is South
-    240 is West
+    A floating point number from -180 to 360:
+        0   is North
+        90  is East
+        180 is South
+        240 is West
     .PARAMETER Pitch
-    A floating point number from -90 to 90
-    -90 is looking straight down
-    0   is looking directly ahead
-    90  is looking straight up
+    A floating point number from -90 to 90:
+        -90 is looking straight down
+        0   is looking directly ahead
+        90  is looking straight up
     .PARAMETER FOV
-    A floating point number from 10 - 100 in degrees.
-    Stands for field of View.
-    10  is super zoomed in
-    100 is super zoomed out
+    Fielf Od View - A floating point number from 10 - 100 in degrees:
+        10  is super zoomed in
+        100 is super zoomed out
     .OUTPUTS
-    A URL to Google Maps
+    A URL to Google Maps.
     .EXAMPLE
     Command: Get-GStreetView -Viewpoint 51.5138066,-0.6198562 -Heading 0 -Pitch 0 -FOV 100
     Result:  https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.5138066%2C-0.6198562&fov=100
