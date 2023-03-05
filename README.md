@@ -9,9 +9,9 @@ Get-GMapsDirections -Origin [string] -Destination [string] -OriginID [string]-De
 ```
 
 ## -Origin
-`location name`, `address`, `Longitude,Latitude`
+`location name`, `address`, `Latitude,Longitude`
 ## -Destination
-`location name`, `address`, `Longitude,Latitude`
+`location name`, `address`, `Latitude,Longitude`
 ## -OriginID
 Google Maps Place ID
 ## -DestinationID
