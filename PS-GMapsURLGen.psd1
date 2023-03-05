@@ -5,7 +5,7 @@
     GUID = '916d0a23-3524-4e87-bbd5-96259cb229fb'
     Author = 'Mr. George Broughton'
     CompanyName = 'Not Applicable'
-    Copyright = '2023 Mr. George Broughton (GPLv2-License)'
+    Copyright = '2023 Mr. George Broughton (GPLv3-License)'
     Description = 'Creates Google Maps URLs'
     PowerShellVersion = '5.1'
     FunctionsToExport = 'Get-GMapsDirections', 'Get-GMapsQuery', 'Get-GMap', 'Get-GStreetView'
