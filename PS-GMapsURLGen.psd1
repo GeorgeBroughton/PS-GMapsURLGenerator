@@ -15,7 +15,7 @@
     PrivateData = @{
         PSData = @{
             Tags = 'Google', 'Maps'
-            LicenseUri = 'https://github.com/GeorgeBroughton/PS-GMapsURLGenerator/blob/main/LICENSE'
+            LicenseUri = 'https://raw.githubusercontent.com/GeorgeBroughton/PS-GMapsURLGenerator/main/LICENSE'
             ProjectUri = 'https://github.com/GeorgeBroughton/PS-GMapsURLGenerator'
             ReleaseNotes = 'Initial release.'
         } 
