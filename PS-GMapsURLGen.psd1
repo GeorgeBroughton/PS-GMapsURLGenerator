@@ -20,4 +20,4 @@
             ReleaseNotes = 'Initial release.'
         } 
     } 
-    }
+}
