@@ -5,7 +5,7 @@ Because why not?
 ## Get-GMapsDirections
 Usage:  
 ```ps
-Get-GMapsDirections -Origin [string] -Destination [string] -OriginID [string]-DestinationID [string] -TravelMode [string] -Navigate [switch] -Waypoints [string[]] -WaypointIDs [string[]]
+Get-GMapsDirections -Origin [string] -Destination [string] -OriginID [string] -DestinationID [string] -TravelMode [string] -Navigate [switch] -Waypoints [string[]] -WaypointIDs [string[]]
 ```
 ### -Origin
 `location name`, `address`, `Latitude,Longitude`

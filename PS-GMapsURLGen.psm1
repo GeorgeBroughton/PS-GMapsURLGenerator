@@ -27,8 +27,8 @@ function Get-GMapsDirections {
     .OUTPUTS
     A URL to Google Maps.
     .EXAMPLE
-    Command: Get-GMapsDirections -Origin "Your Location" -Destination "London,UK" -TravelMode transit -Navigate
-    Result:  https://www.google.com/maps/dir/?api=1&origin=Your+Location&destination=London%2CUK&travelmode=transit&dir_action=navigate
+    Get-GMapsDirections -Origin "Your Location" -Destination "London,UK" -TravelMode transit -Navigate
+    https://www.google.com/maps/dir/?api=1&origin=Your+Location&destination=London%2CUK&travelmode=transit&dir_action=navigate
     .LINK
     https://github.com/GeorgeBroughton/PS-GMapsURLGenerator
     https://developers.google.com/maps/documentation/urls/get-started
@@ -70,8 +70,8 @@ function Get-GMapsQuery {
     .OUTPUTS
     A URL to Google Maps.
     .EXAMPLE
-    Command: Get-GMapsQuery -Query "Reading"
-    Result:  https://www.google.com/maps/search/?api=1&query=Reading
+    Get-GMapsQuery -Query "Reading"
+    https://www.google.com/maps/search/?api=1&query=Reading
     .LINK
     https://github.com/GeorgeBroughton/PS-GMapsURLGenerator
     https://developers.google.com/maps/documentation/urls/get-started
@@ -114,8 +114,8 @@ function Get-GMap {
     .OUTPUTS
     A URL to Google Maps.
     .EXAMPLE
-    Command: Get-GMap -Center 51.5138066,-0.6198562 -Zoom 17 -BaseMap satellite -Layer bicycling
-    Result:  https://www.google.com/maps/@?api=1&map_action=map&center=51.5138066%2C-0.6198562&zoom=17&basemap=satellite&layer=bicycling
+    Get-GMap -Center 51.5138066,-0.6198562 -Zoom 17 -BaseMap satellite -Layer bicycling
+    https://www.google.com/maps/@?api=1&map_action=map&center=51.5138066%2C-0.6198562&zoom=17&basemap=satellite&layer=bicycling
     .LINK
     https://github.com/GeorgeBroughton/PS-GMapsURLGenerator
     https://developers.google.com/maps/documentation/urls/get-started
@@ -164,8 +164,8 @@ function Get-GStreetView {
     .OUTPUTS
     A URL to Google Maps.
     .EXAMPLE
-    Command: Get-GStreetView -Viewpoint 51.5138066,-0.6198562 -Heading 0 -Pitch 0 -FOV 100
-    Result:  https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.5138066%2C-0.6198562&fov=100
+    Get-GStreetView -Viewpoint 51.5138066,-0.6198562 -Heading 0 -Pitch 0 -FOV 100
+    https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.5138066%2C-0.6198562&fov=100
     .LINK
     https://github.com/GeorgeBroughton/PS-GMapsURLGenerator
     https://developers.google.com/maps/documentation/urls/get-started
